@@ -21,7 +21,7 @@
 	  
 	  // Enable autoadvance once we reach slide 1
     if (!autoAdvancing && to === 1) {
-      $.deck('enableScale')
+      // $.deck('enableScale')
       console.log("auto-advancing")
       autoAdvancing = true
       // Autoadvance every 15 seconds
