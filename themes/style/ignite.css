@@ -9,7 +9,6 @@
   width: 800px;
   height: 760px;
 }
-
 .centered {
   text-align: center;
 }
@@ -21,8 +20,7 @@
   float: left;
 }
 .deck-container .slide {
-  background: #000;
-  
+  background: #000; 
   color: #CCC;
   font-weight: 400;
 }
@@ -89,12 +87,10 @@
   margin: 0;
 }
 .deck-container .slide blockquote cite {
-  font-size: .5em;
-  font-style: normal;
+  font-size: 0.75em;
+  font-style: italic;
   font-weight: normal;
-  font-weight: 100;
-  color: #CCC;
-  text-shadow: 0 0 15px #fff, 0 0 2px #fff;
+  color: #AAA;
 }
 .deck-container .slide ::-moz-selection {
   background: #a0f;
