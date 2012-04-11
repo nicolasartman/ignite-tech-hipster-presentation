@@ -4,9 +4,12 @@
   font-weight: bold;
   color: #aaa;
   background: #000;
+/*  background: #333;*/
+/*  background: url('../../ignite/media/hipster background alt.png') fixed no-repeat;*/
   width: 800px;
-  height: 750px;
+  height: 760px;
 }
+
 .centered {
   text-align: center;
 }
@@ -19,6 +22,7 @@
 }
 .deck-container .slide {
   background: #000;
+  
   color: #CCC;
   font-weight: 400;
 }
@@ -37,14 +41,28 @@
   border-bottom: 1px solid #333;
 }
 .deck-container .slide h3 {
+  color: #0af;
+  font-weight: normal;
+  font-weight: 200;
+/*  text-shadow: 0 0 10px #fff, 0 0 2px #fff;*/
+}
+.deck-container .slide h4 {
   color: #fff;
   font-weight: normal;
   font-weight: 200;
 /*  text-shadow: 0 0 10px #fff, 0 0 2px #fff;*/
 }
+.deck-container .slide h4 li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.deck-container .slide .extra-space {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 .deck-container .slide li {
-  margin-bottom: 1.5em;
-/*  font-size: ;*/
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
 }
 .deck-container .slide .red {
   color: #CD000E;
@@ -62,10 +80,10 @@
   color: #f0a;
 }
 .deck-container .slide blockquote {
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 1em 2em;
   color: #fff;
-  border-left: 5px solid #fff;
+  border-left: 4px solid #DDD;
 }
 .deck-container .slide blockquote p {
   margin: 0;
