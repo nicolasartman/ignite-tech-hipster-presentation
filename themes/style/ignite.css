@@ -80,7 +80,8 @@
 .deck-container .slide blockquote {
   font-size: 1.5em;
   padding: 1em 2em;
-  color: #fff;
+/*  color: #fff;*/
+  color: #FF00B2;
   border-left: 4px solid #DDD;
 }
 .deck-container .slide blockquote p {
