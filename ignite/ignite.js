@@ -6,6 +6,7 @@
 	
 	var autoAdvancing = false
 	
+	
 	$d.bind('deck.change', function (event, from, to) {
 	  $subs = $.deck('getSlide', to).find('.sub')
 	  $.each($subs, function(index, sub) {
@@ -20,6 +21,7 @@
 	  
 	  // Enable autoadvance once we reach slide 1
     if (!autoAdvancing && to === 1) {
+      $.deck('enableScale')
       console.log("auto-advancing")
       autoAdvancing = true
       // Autoadvance every 15 seconds
