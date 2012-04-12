@@ -11,7 +11,7 @@
 	var timers = {}
 	
 	// Toggle timers for fadein/fadeout
-	var enableTimer = false
+	var enableTimer = true
 	
 	$d.bind('deck.change', function (event, from, to) {
 	  console.log("from " + from + " to " + to)
@@ -37,6 +37,7 @@
       }
       // fade out
       if (enableTimer && $(sub).attr('out')) {
+        $(sub).show()
         timers[to].push(setTimeout(function () {
           $(sub).fadeOut(200)
         }, $(sub).attr('out') * 1000))
@@ -44,7 +45,7 @@
     })
 	  
 	  // Enable autoadvance once we reach slide 1
-    if (!autoAdvancing && to === 1) {
+    if (!autoAdvancing && to === 2) {
       // $.deck('enableScale')
       autoAdvancing = true
       // Autoadvance every 15 seconds
