@@ -6,7 +6,7 @@
 	var $d = $(document)
 	
 	// TODO: change to false to enable auto-advance
-	var autoAdvancing = true
+	var autoAdvancing = false
 	
 	var timers = {}
 	
@@ -14,7 +14,7 @@
 	var autoAdvanceTimer
 	
 	// Toggle timers for fadein/fadeout
-	var enableTimer = false
+	var enableTimer = true
 	
 	// Enable/disable timers for transitions and builds
   $d.bind('deck.init', function () {

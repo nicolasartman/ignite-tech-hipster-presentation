@@ -131,7 +131,7 @@
   opacity: 1;
 }
 .deck-container .deck-status {
-/*  display:none;*/
+  display:none;
   font-size: 0.6666em;
 }
 .deck-container .goto-form {
