@@ -14,8 +14,9 @@
 	var autoAdvanceTimer
 	
 	// Toggle timers for fadein/fadeout
-	var enableTimer = true
+	var enableTimer = false
 	
+	// Enable/disable timers for transitions and builds
   $d.bind('deck.init', function () {
     $d.bind('keydown', function(event) {
       if (event.which === 84) {
