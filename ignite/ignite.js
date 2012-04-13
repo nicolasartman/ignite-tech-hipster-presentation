@@ -10,6 +10,9 @@
 	
 	var timers = {}
 	
+	// interval timer for auto-advance
+	var autoAdvanceTimer
+	
 	// Toggle timers for fadein/fadeout
 	var enableTimer = true
 	
@@ -25,6 +28,20 @@
         else {
           enableTimer = true
           console.log("transition timing enabled")
+        }
+      }
+      if (event.which === 65) {
+        // reset current autoadvance timer
+        clearInterval(autoAdvanceTimer)
+        if (autoAdvancing) {
+          console.log("autoadvance disabled")
+          // true makes it not start the autoadvance timer again
+          autoAdvancing = true
+        }
+        else {
+          console.log("autoadvance enabled - will start on next slide change")
+          // will restart auto-advance on next slide transition
+          autoAdvancing = false
         }
       }
     })
@@ -66,7 +83,7 @@
       console.log("Auto-Advance Enabled")
       autoAdvancing = true
       // Autoadvance every 15 seconds
-      var autoAdvance = setInterval(function () {
+      autoAdvanceTimer = setInterval(function () {
           $.deck('next')
       }, 15000)
     }
