@@ -6,7 +6,7 @@
 	var $d = $(document)
 	
 	// TODO: change to false to enable auto-advance
-	var autoAdvancing = false
+	var autoAdvancing = true
 	
 	var timers = {}
 	
@@ -32,7 +32,6 @@
         // show after the specified time
         timers[to].push(setTimeout(function () {
           $(sub).fadeIn(200)
-          // TODO: FIX IJN TO IN SO ANIMS WORK
         }, $(sub).attr('in') * 1000))
       }
       // fade out
