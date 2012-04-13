@@ -18,7 +18,6 @@
 	
   $d.bind('deck.init', function () {
     $d.bind('keydown', function(event) {
-      console.log(event.which)
       if (event.which === 84) {
         // disable timers
         if (enableTimer) {
