@@ -13,6 +13,23 @@
 	// Toggle timers for fadein/fadeout
 	var enableTimer = true
 	
+  $d.bind('deck.init', function () {
+    $d.bind('keydown', function(event) {
+      console.log(event.which)
+      if (event.which === 84) {
+        // disable timers
+        if (enableTimer) {
+          console.log("transition timing disabled")
+          enableTimer = false
+        }
+        else {
+          enableTimer = true
+          console.log("transition timing enabled")
+        }
+      }
+    })
+  })
+	
 	$d.bind('deck.change', function (event, from, to) {
     // console.log("from " + from + " to " + to)
 	  var $subs = $.deck('getSlide', to).find('.sub')
