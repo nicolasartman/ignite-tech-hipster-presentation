@@ -32,10 +32,12 @@
       if (event.which === 65) {
         // reset current autoadvance timer
         clearInterval(autoAdvanceTimer)
-        if (autoAdvancing) {
+        if (autoAdvanceTimer === null) {
           console.log("autoadvance disabled")
           // true makes it not start the autoadvance timer again
           autoAdvancing = true
+          // clears the timer so it can be reenabled
+          autoAdvanceTimer = null
         }
         else {
           console.log("autoadvance enabled - will start on next slide change")
