@@ -1,6 +1,6 @@
 #Technohipsterism: What, you haven't heard of it?
 
-http://nicolasartman.github.com/ignite-s12-pres/ignite/ignite.html
+http://nicolasartman.github.com/ignite-tech-hipster-presentation/ignite/ignite.html
 
 An Ignite presentation by Nicolas Artman
 
